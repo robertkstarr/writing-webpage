@@ -9,6 +9,7 @@ const DesktopFooter = () => {
       sx={{ top: "auto", bottom: 0, padding: "1rem" }}
     >
       <Box>© Copyright {year} by Robert K. Starr</Box>
+      <Box>All Rights Reserved</Box>
     </AppBar>
   );
 };

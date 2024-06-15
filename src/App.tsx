@@ -1,5 +1,5 @@
-import "./App.css";
 import { ThemeOptions, ThemeProvider, createTheme } from "@mui/material";
+import "./App.css";
 import DesktopApp from "./Desktop/DesktopApp";
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
         paper: "#121212",
       },
     },
+    spacing: 10,
   };
 
   const theme = createTheme(themeOptions);
