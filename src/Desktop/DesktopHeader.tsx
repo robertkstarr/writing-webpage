@@ -22,7 +22,7 @@ const DesktopHeader = () => {
             <Button
               key={page}
               onClick={() => {}}
-              sx={{ my: 2, color: "white", display: "block" }}
+              sx={{ my: 2, display: "block" }}
             >
               {page}
             </Button>

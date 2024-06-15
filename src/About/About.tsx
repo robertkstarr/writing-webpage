@@ -12,6 +12,7 @@ const About = () => {
           flexGrow: "1",
           flexDirection: "column",
           justifyContent: "center",
+          backgroundColor: "inherit",
           backgroundImage: "none",
         }}
       >
@@ -27,6 +28,7 @@ const About = () => {
           textAlign: "left",
           gap: 3,
           overflowY: "auto",
+          justifyContent: "center",
         }}
       >
         <AboutText />
