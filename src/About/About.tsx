@@ -12,6 +12,7 @@ const About = () => {
           flexGrow: "1",
           flexDirection: "column",
           justifyContent: "center",
+          backgroundImage: "none",
         }}
       >
         <CardMedia component="img" height="70%" image={portrait} />
@@ -21,12 +22,11 @@ const About = () => {
           display: "flex",
           flexDirection: "column",
           flexGrow: "2",
-          //   backgroundColor: "green",
           width: "80%",
-          margin: 2,
+          margin: 4,
           textAlign: "left",
           gap: 3,
-          overflowY: "scroll",
+          overflowY: "auto",
         }}
       >
         <AboutText />

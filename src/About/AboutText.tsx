@@ -30,8 +30,7 @@ const AboutText = () => {
       <div>
         No, that wasn't the twist. The twist was when I found that the school
         stipend wasn't enough to make ends meet, so I found myself work
-        ghostwriting romance novels. Or maybe it was the irony in my using those
-        romance novels to pay for my divorce.
+        ghostwriting romance novels on the side.
       </div>
       <div>
         I left school for a job in tech, but after a recent "reorganization"
