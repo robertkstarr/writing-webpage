@@ -1,14 +1,35 @@
-import { AppBar, Box, Typography } from "@mui/material";
+import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 
 const DesktopFooter = () => {
   const year = new Date().getFullYear();
   return (
-    <AppBar position="fixed" sx={{ top: "auto", bottom: 0, padding: "1rem" }}>
-      <Typography variant="subtitle1">
-        <Box>© Copyright {year} by Robert K. Starr</Box>
-        <Box>All Rights Reserved</Box>
-      </Typography>
-    </AppBar>
+    <>
+      <Toolbar />
+      <AppBar
+        position="fixed"
+        sx={{
+          top: "auto",
+          bottom: 0,
+
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Toolbar>
+          <Typography
+            variant="subtitle1"
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <Box>© Copyright {year} by Robert K. Starr</Box>
+            <Box>All Rights Reserved</Box>
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </>
   );
 };
 

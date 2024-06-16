@@ -1,3 +1,4 @@
+import { Toolbar } from "@mui/material";
 import Container from "@mui/material/Container";
 import About from "../About/About";
 import DesktopFooter from "./DesktopFooter";
@@ -7,6 +8,7 @@ const DesktopApp = () => {
   return (
     <>
       <DesktopHeader />
+      <Toolbar />
       <Container
         disableGutters
         sx={{
