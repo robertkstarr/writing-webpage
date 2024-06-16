@@ -5,6 +5,8 @@ import AboutText from "./AboutText";
 const About = () => {
   return (
     <Container
+      disableGutters
+      maxWidth={false}
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -17,31 +19,31 @@ const About = () => {
         sx={{
           display: "flex",
           flexDirection: "row",
-          height: "100%",
-          minHeight: 0,
+          //   height: "100%",
+          //   minHeight: 0,
         }}
       >
         <Card
           sx={{
             display: "flex",
-            padding: 1,
-            flexGrow: "1",
-            flexDirection: "column",
-            justifyContent: "center",
+            alignItems: "center",
+            flex: 1,
             backgroundColor: "inherit",
             backgroundImage: "none",
           }}
         >
-          <CardMedia component="img" height="40%" image={portrait} />
+          <CardMedia
+            component="img"
+            height="100%"
+            sx={{ display: "flex", objectFit: "contain" }}
+            image={portrait}
+          />
         </Card>
         <Box
           sx={{
             display: "flex",
+            flex: 4,
             flexDirection: "column",
-            flexGrow: "2",
-            width: "80%",
-            // height: "auto",
-            // margin: 4,
             padding: 2,
             textAlign: "left",
             gap: 3,
