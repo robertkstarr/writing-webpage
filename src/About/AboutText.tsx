@@ -1,6 +1,11 @@
+import Typography from "@mui/material/Typography";
+
 const AboutText = () => {
   return (
-    <>
+    <Typography
+      gap={3}
+      sx={{ display: "flex", flexDirection: "column", height: "100%" }}
+    >
       <div>
         As a child, I carried a notebook around with me everywhere I went,
         writing a book one sentence at a time. I was obsessed with stories, in
@@ -19,13 +24,13 @@ const AboutText = () => {
       </div>
       <div>
         Or maybe it was when, from that, I found myself in a Physics PhD program
-        in Austin, Texas, where I somewhat secretly spent my free time writing a
-        weekly column for the school paper, where I'd take a scientific topic,
-        dive into the current research available on the subject, then summarize
-        it in 600 words or so. With articles ranging from the Kennedy
-        assassination to the mating practices of praying mantises to quantum
-        entanglement, the challenge of adhering to that word count varied
-        greatly from week to week.
+        in Austin, Texas, where I secretly spent my free time writing a weekly
+        column for the school paper, where I'd take a scientific topic, dive
+        into the current research available on the subject, then summarize it in
+        600 words or so. With articles ranging from the Kennedy assassination to
+        the mating practices of praying mantises to quantum entanglement, the
+        challenge of adhering to that word count varied greatly from week to
+        week.
       </div>
       <div>
         No, that wasn't the twist. The twist was when I found that the school
@@ -37,7 +42,7 @@ const AboutText = () => {
         (i.e. layoffs), I found myself jaded with the industry and eager to
         return to my creative roots.
       </div>
-    </>
+    </Typography>
   );
 };
 

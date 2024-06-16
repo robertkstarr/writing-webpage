@@ -10,16 +10,16 @@ const About = () => {
         flexDirection: "column",
         height: "100%",
         margin: 0,
+        minHeight: 0,
       }}
     >
-      {/* <Box> */}
-      <Typography variant="h3">About</Typography>
-      {/* </Box> */}
+      <Typography variant="h5">About</Typography>
       <Container
         sx={{
           display: "flex",
           flexDirection: "row",
           height: "100%",
+          minHeight: 0,
         }}
       >
         <Card
@@ -41,6 +41,7 @@ const About = () => {
             flexDirection: "column",
             flexGrow: "2",
             width: "80%",
+            height: "auto",
             margin: 4,
             textAlign: "left",
             gap: 3,

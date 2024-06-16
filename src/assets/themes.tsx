@@ -13,6 +13,7 @@ export const hackerTheme: ThemeOptions = {
   },
   typography: {
     fontFamily: "Open Sans",
+    fontSize: 18,
     h1: {
       fontFamily: "Ubuntu Mono",
     },
@@ -30,6 +31,7 @@ export const hackerTheme: ThemeOptions = {
     },
     h5: {
       fontFamily: "Ubuntu Mono",
+      color: "#0f0",
     },
     subtitle1: {
       fontFamily: "Ubuntu Mono",

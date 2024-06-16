@@ -13,10 +13,11 @@ const DesktopApp = () => {
           display: "flex",
           alignItems: "stretch",
           width: "100%",
-          height: "70vh",
+          height: "75vh",
           margin: "0",
           padding: "0",
           border: "0",
+          minHeight: "0",
         }}
       >
         <About />
