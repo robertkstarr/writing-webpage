@@ -1,11 +1,6 @@
-import Typography from "@mui/material/Typography";
-
 const AboutText = () => {
   return (
-    <Typography
-      gap={3}
-      sx={{ display: "flex", flexDirection: "column", height: "100%" }}
-    >
+    <>
       <div>
         As a child, I carried a notebook around with me everywhere I went,
         writing a book one sentence at a time. I was obsessed with stories, in
@@ -42,7 +37,7 @@ const AboutText = () => {
         (i.e. layoffs), I found myself jaded with the industry and eager to
         return to my creative roots.
       </div>
-    </Typography>
+    </>
   );
 };
 

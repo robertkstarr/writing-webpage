@@ -13,7 +13,6 @@ const About = () => {
         minHeight: 0,
       }}
     >
-      <Typography variant="h5">About</Typography>
       <Container
         sx={{
           display: "flex",
@@ -41,14 +40,21 @@ const About = () => {
             flexDirection: "column",
             flexGrow: "2",
             width: "80%",
-            height: "auto",
-            margin: 4,
+            // height: "auto",
+            // margin: 4,
+            padding: 2,
             textAlign: "left",
             gap: 3,
             overflowY: "auto",
             justifyContent: "center",
           }}
         >
+          <Typography
+            variant="h5"
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            About
+          </Typography>
           <AboutText />
         </Box>
       </Container>

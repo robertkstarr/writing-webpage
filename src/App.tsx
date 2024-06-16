@@ -2,7 +2,6 @@ import "@fontsource/ubuntu-mono"; // Defaults to weight 400
 import "@fontsource/ubuntu-mono/400-italic.css";
 import "@fontsource/ubuntu-mono/400.css"; // Specify weight
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
-import "./App.css";
 import DesktopApp from "./Desktop/DesktopApp";
 import { hackerTheme } from "./assets/themes";
 
