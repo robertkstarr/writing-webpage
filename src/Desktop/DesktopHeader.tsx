@@ -2,7 +2,11 @@ import { AppBar, Box, Button, Toolbar } from "@mui/material";
 
 const pages = ["About", "Services", "Testimonials", "Portfolio", "Contact"];
 
-const DesktopHeader = () => {
+interface HeaderProps {
+  setSection: (input: string) => void;
+}
+
+const DesktopHeader = (props: HeaderProps) => {
   return (
     <>
       <AppBar position="fixed">
@@ -22,7 +26,10 @@ const DesktopHeader = () => {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={() => {}}
+                onClick={() => {
+                  console.log(page);
+                  props.setSection(page);
+                }}
                 sx={{ my: 2, display: "block" }}
               >
                 {page}
