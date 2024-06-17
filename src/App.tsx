@@ -7,9 +7,10 @@ import { Content } from "./Main/Content";
 import NavAppBarMenu from "./Main/Header/Navigation/NavAppBarMenu";
 import NavDropDownMenu from "./Main/Header/Navigation/NavDropDownMenu";
 import SiteHeader from "./Main/Header/SiteHeader";
+import ThemeMenu from "./Main/Header/Theming/ThemeMenu";
+import DefaultTheme from "./Main/Header/Theming/Themes/default";
+import { chooseTheme } from "./Main/Header/Theming/Themes/themes";
 import SiteFooter from "./Main/SiteFooter";
-import DefaultTheme from "./assets/Themes/default";
-import { chooseTheme } from "./assets/Themes/themes";
 
 function App() {
   const [theme, setTheme] = useState("romance");
@@ -30,7 +31,7 @@ function App() {
       <SiteHeader
         navDropDownMenu={<NavDropDownMenu setSection={setSection} />}
         navAppBarMenu={<NavAppBarMenu setSection={setSection} />}
-        setTheme={setTheme}
+        themeMenu={<ThemeMenu setTheme={setTheme} />}
       />
       {Content(section)}
       <SiteFooter />
