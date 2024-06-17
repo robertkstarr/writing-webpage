@@ -23,6 +23,7 @@ interface HeaderProps {
 const DesktopHeader = (props: HeaderProps) => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorTheme, setAnchorTheme] = useState<null | HTMLElement>(null);
+
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -80,7 +81,7 @@ const DesktopHeader = (props: HeaderProps) => {
                     props.setSection(page);
                   }}
                 >
-                  <Typography textAlign="center" variant="subtitle1">
+                  <Typography textAlign="center" variant="subtitle2">
                     {page}
                   </Typography>
                 </MenuItem>
@@ -146,7 +147,9 @@ const DesktopHeader = (props: HeaderProps) => {
                 key={theme}
                 onClick={() => {
                   handleCloseThemeMenu();
-                  props.setTheme(theme);
+                  setTimeout(() => {
+                    props.setTheme(theme);
+                  }, 100);
                 }}
               >
                 <Typography textAlign="center" variant="subtitle2">

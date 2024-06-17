@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import DesktopApp from "./Desktop/DesktopApp";
 import HackerTheme from "./assets/Themes/hacker";
 import RomanceTheme from "./assets/Themes/romance";
+import { themes } from "./assets/Themes/themes";
 
 function App() {
   const [theme, setTheme] = useState("romance");
@@ -15,10 +16,10 @@ function App() {
 
   useEffect(() => {
     switch (theme) {
-      case "Software Developer":
+      case themes[0]:
         setCurrentTheme(HackerTheme);
         break;
-      case "Romance Author":
+      case themes[1]:
         setCurrentTheme(RomanceTheme);
         break;
       default:

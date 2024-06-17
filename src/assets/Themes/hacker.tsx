@@ -41,6 +41,8 @@ const themeSettings: ThemeOptions = {
     },
     subtitle2: {
       fontFamily: "Ubuntu Mono",
+      color: "#0f0",
+      fontSize: "1rem",
     },
     button: {
       fontFamily: "Ubuntu Mono",
