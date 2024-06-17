@@ -16,12 +16,7 @@ const ThemeMenu = (props: ThemeMenuProps) => {
   const handleCloseThemeMenu = () => {
     setAnchorTheme(null);
   };
-  const styles = {
-    largeIcon: {
-      width: 60,
-      height: 60,
-    },
-  };
+
   return (
     <>
       <IconButton
