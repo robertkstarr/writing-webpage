@@ -1,6 +1,6 @@
-import { ThemeOptions } from "@mui/material";
+import { ThemeOptions, createTheme } from "@mui/material";
 
-export const hackerTheme: ThemeOptions = {
+const themeSettings: ThemeOptions = {
   palette: {
     mode: "dark",
     primary: {
@@ -52,3 +52,7 @@ export const hackerTheme: ThemeOptions = {
     },
   },
 };
+
+const HackerTheme = createTheme(themeSettings);
+
+export default HackerTheme;

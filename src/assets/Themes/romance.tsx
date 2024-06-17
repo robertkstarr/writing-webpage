@@ -1,7 +1,7 @@
 import "@fontsource/homemade-apple";
-import { ThemeOptions } from "@mui/material/styles";
+import { ThemeOptions, createTheme } from "@mui/material/styles";
 
-export const romanceTheme: ThemeOptions = {
+const themeSettings: ThemeOptions = {
   palette: {
     mode: "light",
     primary: {
@@ -56,3 +56,7 @@ export const romanceTheme: ThemeOptions = {
     },
   },
 };
+
+const RomanceTheme = createTheme(themeSettings);
+
+export default RomanceTheme;

@@ -3,7 +3,11 @@ import About from "../About/About";
 import DesktopFooter from "./DesktopFooter";
 import DesktopHeader from "./DesktopHeader";
 
-const DesktopApp = () => {
+interface DesktopAppProps {
+  setTheme: (theme: string) => void;
+}
+
+const DesktopApp = (props: DesktopAppProps) => {
   const [section, setSection] = useState("About");
 
   const Content = () => {
@@ -25,7 +29,7 @@ const DesktopApp = () => {
 
   return (
     <>
-      <DesktopHeader setSection={setSection} />
+      <DesktopHeader setSection={setSection} setTheme={props.setTheme} />
       <Content />
       <DesktopFooter />
     </>
