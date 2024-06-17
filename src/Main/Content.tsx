@@ -1,4 +1,5 @@
 import About from "../About/About";
+import Testimonials from "../Testimonials/testimonials";
 
 export const Content = (section: string) => {
   switch (section) {
@@ -7,7 +8,7 @@ export const Content = (section: string) => {
     case "Services":
       return <>Services</>;
     case "Testimonials":
-      return <>Testimonials</>;
+      return <Testimonials />;
     case "Portfolio":
       return <>Portfolio</>;
     case "Contact":
