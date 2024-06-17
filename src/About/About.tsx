@@ -1,11 +1,4 @@
-import {
-  Box,
-  Card,
-  CardMedia,
-  Container,
-  Typography,
-  useTheme,
-} from "@mui/material";
+import { Box, Card, CardMedia, Container, useTheme } from "@mui/material";
 import LoremIpsum from "react-lorem-ipsum";
 import portrait from "../assets/portrait.jpg";
 
@@ -48,17 +41,6 @@ const About = () => {
           image={portrait}
         />
       </Card>
-      <Typography
-        variant="h5"
-        sx={{
-          paddingTop: 2,
-          display: "flex",
-          justifyContent: "center",
-          color: `${theme.palette.primary.main}`,
-        }}
-      >
-        About
-      </Typography>
       <Container
         sx={{
           display: "flex",

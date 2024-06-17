@@ -3,7 +3,7 @@ import "@fontsource/ubuntu-mono/400-italic.css";
 import "@fontsource/ubuntu-mono/400.css"; // Specify weight
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { useEffect, useState } from "react";
-import { Content } from "./Main/Content";
+import Content from "./Main/Content";
 import NavAppBarMenu from "./Main/Header/Navigation/NavAppBarMenu";
 import NavDropDownMenu from "./Main/Header/Navigation/NavDropDownMenu";
 import SiteHeader from "./Main/Header/SiteHeader";
@@ -33,7 +33,8 @@ function App() {
         navAppBarMenu={<NavAppBarMenu setSection={setSection} />}
         themeMenu={<ThemeMenu setTheme={setTheme} />}
       />
-      {Content(section)}
+
+      <Content section={section} />
       <SiteFooter />
     </ThemeProvider>
   );
