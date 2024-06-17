@@ -1,1 +1,6 @@
-export const themes = ["Software Developer", "Romance Author"];
+export const themes = [
+  "Default",
+  "Software Developer",
+  "Romance Author",
+  "Screenwriter",
+];
