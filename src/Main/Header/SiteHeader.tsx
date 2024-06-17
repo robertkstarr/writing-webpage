@@ -1,4 +1,10 @@
-import { AppBar, Toolbar } from "@mui/material";
+import {
+  AppBar,
+  ThemeProvider,
+  Toolbar,
+  createTheme,
+  useTheme,
+} from "@mui/material";
 
 interface HeaderProps {
   navDropDownMenu: React.ReactElement;
@@ -7,8 +13,10 @@ interface HeaderProps {
 }
 
 const SiteHeader = (props: HeaderProps) => {
+  const theme = useTheme();
+  const modifiedTheme = createTheme({ ...theme, typography: { fontSize: 18 } });
   return (
-    <>
+    <ThemeProvider theme={modifiedTheme}>
       <AppBar position="fixed">
         <Toolbar sx={{ justifyContent: "center" }}>
           {props.navDropDownMenu}
@@ -17,7 +25,7 @@ const SiteHeader = (props: HeaderProps) => {
         </Toolbar>
       </AppBar>
       <Toolbar />
-    </>
+    </ThemeProvider>
   );
 };
 

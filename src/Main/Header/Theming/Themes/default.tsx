@@ -14,6 +14,14 @@ const themeOptions: ThemeOptions = {
       paper: "#fff",
     },
   },
+  typography: {
+    body1: {
+      fontSize: 12,
+    },
+    subtitle1: {
+      fontSize: 12,
+    },
+  },
 };
 
 const DefaultTheme = createTheme(themeOptions);

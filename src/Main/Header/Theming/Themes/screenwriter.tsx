@@ -18,8 +18,13 @@ const themeOptions: ThemeOptions = {
   },
   typography: {
     fontFamily: "Courier Prime",
-    fontSize: 12,
+    body1: {
+      fontSize: 18,
+    },
     button: { fontSize: 18 },
+    subtitle1: {
+      fontSize: 12,
+    },
   },
 };
 

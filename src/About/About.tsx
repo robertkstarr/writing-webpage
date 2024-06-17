@@ -24,7 +24,7 @@ const About = () => {
           flex: 1,
           backgroundColor: "inherit",
           backgroundImage: "none",
-          padding: 1,
+
           border: "none",
           boxShadow: "none",
           width: "100%",
@@ -73,7 +73,6 @@ const About = () => {
             flexDirection: "column",
             paddingBottom: 4,
             textAlign: "left",
-            // gap: 3,
             overflowY: "auto",
             justifyContent: "center",
           }}

@@ -14,7 +14,9 @@ const themeSettings: ThemeOptions = {
   },
   typography: {
     fontFamily: "Open Sans",
-    fontSize: 18,
+    body1: {
+      fontSize: 18,
+    },
     h1: {
       fontFamily: "Ubuntu Mono",
     },

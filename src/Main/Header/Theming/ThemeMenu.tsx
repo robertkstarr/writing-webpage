@@ -28,7 +28,7 @@ const ThemeMenu = (props: ThemeMenuProps) => {
         color="inherit"
         sx={{ position: "fixed", right: { xs: 10, md: 10, lg: 25 } }}
       >
-        <PaletteTwoTone />
+        <PaletteTwoTone color="secondary" />
       </IconButton>
       <Menu
         id="theme-menu-appbar"

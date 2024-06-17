@@ -1,3 +1,4 @@
+import LoremIpsum from "react-lorem-ipsum";
 import About from "../About/About";
 import PageTemplate from "../PageTemplate";
 import Testimonials from "../Testimonials/testimonials";
@@ -8,13 +9,25 @@ const Content = (props: { section: string }) => {
       case "About":
         return <About />;
       case "Services":
-        return <>Services</>;
+        return (
+          <>
+            <LoremIpsum p={5} random={false} />
+          </>
+        );
       case "Testimonials":
         return <Testimonials />;
       case "Portfolio":
-        return <>Portfolio</>;
+        return (
+          <>
+            <LoremIpsum p={5} random={false} />
+          </>
+        );
       case "Contact":
-        return <>Contact</>;
+        return (
+          <>
+            <LoremIpsum p={5} random={false} />
+          </>
+        );
       default:
         return <>Invalid Selection</>;
     }
