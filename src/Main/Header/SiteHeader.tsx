@@ -1,8 +1,6 @@
 import { PaletteTwoTone } from "@mui/icons-material";
 import {
   AppBar,
-  Box,
-  Button,
   IconButton,
   Menu,
   MenuItem,
@@ -12,11 +10,10 @@ import {
 import { useState } from "react";
 import { themes } from "../../assets/Themes/themes";
 
-const pages = ["About", "Services", "Testimonials", "Portfolio", "Contact"];
-
 interface HeaderProps {
   setTheme: (input: string) => void;
-  navMenu: React.ReactElement;
+  navDropDownMenu: React.ReactElement;
+  navAppBarMenu: React.ReactElement;
 }
 
 const SiteHeader = (props: HeaderProps) => {
@@ -34,32 +31,8 @@ const SiteHeader = (props: HeaderProps) => {
     <>
       <AppBar position="fixed">
         <Toolbar sx={{ justifyContent: "center" }}>
-          {props.navMenu}
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: {
-                xs: "none",
-                md: "flex",
-                justifyContent: "space-between",
-                maxWidth: "50rem",
-              },
-            }}
-          >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={() => {
-                  props.setSection(page);
-                }}
-                sx={{ my: 2, display: "block" }}
-                variant="contained"
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
+          {props.navDropDownMenu}
+          {props.navAppBarMenu}
           <IconButton
             size="large"
             aria-label="account of current user"

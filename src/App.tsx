@@ -4,7 +4,8 @@ import "@fontsource/ubuntu-mono/400.css"; // Specify weight
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Content } from "./Main/Content";
-import NavDropDownMenu from "./Main/Header/NavDropDownMenu";
+import NavAppBarMenu from "./Main/Header/Navigation/NavAppBarMenu";
+import NavDropDownMenu from "./Main/Header/Navigation/NavDropDownMenu";
 import SiteHeader from "./Main/Header/SiteHeader";
 import SiteFooter from "./Main/SiteFooter";
 import DefaultTheme from "./assets/Themes/default";
@@ -27,7 +28,8 @@ function App() {
     <ThemeProvider theme={currentTheme}>
       <CssBaseline />
       <SiteHeader
-        navMenu={<NavDropDownMenu setSection={setSection} />}
+        navDropDownMenu={<NavDropDownMenu setSection={setSection} />}
+        navAppBarMenu={<NavAppBarMenu setSection={setSection} />}
         setTheme={setTheme}
       />
       {Content(section)}
