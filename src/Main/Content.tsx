@@ -1,3 +1,4 @@
+import Box from "@mui/material/Box";
 import LoremIpsum from "react-lorem-ipsum";
 import About from "../About/About";
 import PageTemplate from "../PageTemplate";
@@ -33,7 +34,11 @@ const Content = (props: { section: string }) => {
     }
   };
 
-  return <PageTemplate pageTitle={props.section}>{getBody()}</PageTemplate>;
+  return (
+    <Box width="100%" justifyContent={"center"} display={"flex"}>
+      <PageTemplate pageTitle={props.section}>{getBody()}</PageTemplate>
+    </Box>
+  );
 };
 
 export default Content;

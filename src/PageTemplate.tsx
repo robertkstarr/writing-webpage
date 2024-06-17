@@ -4,9 +4,13 @@ const PageTemplate = (props: { pageTitle: string; children: JSX.Element }) => {
   const theme = useTheme();
 
   return (
-    <Box>
+    <Box
+      alignSelf={"center"}
+      maxWidth={"1200px"}
+      sx={{ display: "flex", flexDirection: "column", alignSelf: "center" }}
+    >
       <Typography
-        variant="h5"
+        variant="h4"
         sx={{
           paddingTop: { xs: 2, md: 4 },
           display: "flex",
