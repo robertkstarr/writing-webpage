@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
-import { themes } from "../assets/Themes/themes";
+import { themes } from "../../assets/Themes/themes";
 
 const pages = ["About", "Services", "Testimonials", "Portfolio", "Contact"];
 
@@ -20,7 +20,7 @@ interface HeaderProps {
   setTheme: (input: string) => void;
 }
 
-const DesktopHeader = (props: HeaderProps) => {
+const SiteHeader = (props: HeaderProps) => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorTheme, setAnchorTheme] = useState<null | HTMLElement>(null);
 
@@ -42,7 +42,6 @@ const DesktopHeader = (props: HeaderProps) => {
   return (
     <>
       <AppBar position="fixed">
-        {/* See: https://mui.com/material-ui/react-app-bar/#app-bar-with-responsive-menu for how to make it responsive (mobile vs desktop) */}
         <Toolbar sx={{ justifyContent: "center" }}>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -165,4 +164,4 @@ const DesktopHeader = (props: HeaderProps) => {
   );
 };
 
-export default DesktopHeader;
+export default SiteHeader;

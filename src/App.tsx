@@ -3,43 +3,31 @@ import "@fontsource/ubuntu-mono/400-italic.css";
 import "@fontsource/ubuntu-mono/400.css"; // Specify weight
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { useEffect, useState } from "react";
-import DesktopApp from "./Desktop/DesktopApp";
+import { Content } from "./Main/Content";
+import SiteHeader from "./Main/Header/SiteHeader";
+import SiteFooter from "./Main/SiteFooter";
 import DefaultTheme from "./assets/Themes/default";
-import HackerTheme from "./assets/Themes/hacker";
-import RomanceTheme from "./assets/Themes/romance";
-import ScreenwriterTheme from "./assets/Themes/screenwriter";
-import { themes } from "./assets/Themes/themes";
+import { chooseTheme } from "./assets/Themes/themes";
 
 function App() {
   const [theme, setTheme] = useState("romance");
+  const [section, setSection] = useState("About");
   const [currentTheme, setCurrentTheme] = useState(DefaultTheme);
 
-  const desktop = true;
+  useEffect(() => {
+    setCurrentTheme(chooseTheme(theme));
+  }, [theme]);
 
   useEffect(() => {
-    switch (theme) {
-      case themes[0]:
-        setCurrentTheme(DefaultTheme);
-        break;
-      case themes[1]:
-        setCurrentTheme(HackerTheme);
-        break;
-      case themes[2]:
-        setCurrentTheme(RomanceTheme);
-        break;
-      case themes[3]:
-        setCurrentTheme(ScreenwriterTheme);
-        break;
-      default:
-        setCurrentTheme(DefaultTheme);
-        break;
-    }
-  }, [theme]);
+    setSection(section);
+  }, [section]);
 
   return (
     <ThemeProvider theme={currentTheme}>
       <CssBaseline />
-      {desktop ? <DesktopApp setTheme={setTheme} /> : <>mobile app</>}
+      <SiteHeader setSection={setSection} setTheme={setTheme} />
+      {Content(section)}
+      <SiteFooter />
     </ThemeProvider>
   );
 }

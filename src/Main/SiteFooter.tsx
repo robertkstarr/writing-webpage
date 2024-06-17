@@ -1,6 +1,6 @@
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 
-const DesktopFooter = () => {
+const SiteFooter = () => {
   const year = new Date().getFullYear();
   return (
     <>
@@ -38,4 +38,4 @@ const DesktopFooter = () => {
   );
 };
 
-export default DesktopFooter;
+export default SiteFooter;
