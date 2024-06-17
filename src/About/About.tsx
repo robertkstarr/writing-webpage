@@ -24,6 +24,30 @@ const About = () => {
         minHeight: 0,
       }}
     >
+      <Card
+        sx={{
+          display: { xs: "flex", md: "none" },
+          alignItems: "center",
+          flex: 1,
+          backgroundColor: "inherit",
+          backgroundImage: "none",
+          padding: 1,
+          border: "none",
+          boxShadow: "none",
+          width: "100%",
+          justifyContent: "center",
+        }}
+      >
+        <CardMedia
+          component="img"
+          sx={{
+            display: "flex",
+            objectFit: "contain",
+            width: "60%",
+          }}
+          image={portrait}
+        />
+      </Card>
       <Typography
         variant="h5"
         sx={{
@@ -65,7 +89,7 @@ const About = () => {
             display: "flex",
             flex: 4,
             flexDirection: "column",
-            padding: 2,
+            paddingBottom: 4,
             textAlign: "left",
             gap: 3,
             overflowY: "auto",

@@ -39,6 +39,7 @@ export const romanceTheme: ThemeOptions = {
       fontFamily: "Homemade Apple",
     },
     subtitle1: {
+      fontSize: "1rem",
       fontFamily: "Homemade Apple",
     },
     subtitle2: {

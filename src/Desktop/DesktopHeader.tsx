@@ -1,4 +1,3 @@
-import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
   AppBar,
@@ -75,7 +74,7 @@ const DesktopHeader = (props: HeaderProps) => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
           <Box
             sx={{
               flexGrow: 1,

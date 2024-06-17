@@ -22,10 +22,15 @@ const DesktopFooter = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              padding: { xs: 1, md: 0 },
             }}
           >
-            <Box>© Copyright {year} by Robert K. Starr</Box>
-            <Box>All Rights Reserved</Box>
+            <Box sx={{ display: "flex", textAlign: "center" }}>
+              © Copyright {year} by Robert K. Starr
+            </Box>
+            <Box sx={{ display: "flex", textAlign: "center" }}>
+              All Rights Reserved
+            </Box>
           </Typography>
         </Toolbar>
       </AppBar>
