@@ -16,7 +16,12 @@ const ThemeMenu = (props: ThemeMenuProps) => {
   const handleCloseThemeMenu = () => {
     setAnchorTheme(null);
   };
-
+  const styles = {
+    largeIcon: {
+      width: 60,
+      height: 60,
+    },
+  };
   return (
     <>
       <IconButton
@@ -28,7 +33,7 @@ const ThemeMenu = (props: ThemeMenuProps) => {
         color="inherit"
         sx={{ position: "fixed", right: { xs: 10, md: 10, lg: 25 } }}
       >
-        <PaletteTwoTone color="secondary" />
+        <PaletteTwoTone color="secondary" fontSize="large" />
       </IconButton>
       <Menu
         id="theme-menu-appbar"

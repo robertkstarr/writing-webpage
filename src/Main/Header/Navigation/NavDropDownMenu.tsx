@@ -26,7 +26,7 @@ const NavDropDownMenu = (props: NavDropDownProps) => {
         onClick={handleOpenNavMenu}
         color="inherit"
       >
-        <MenuIcon color="secondary" />
+        <MenuIcon color="secondary" fontSize="large" />
       </IconButton>
       <Menu
         id="menu-appbar"
