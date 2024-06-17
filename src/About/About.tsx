@@ -97,6 +97,7 @@ const About = () => {
           }}
         >
           {/* <AboutText /> */}
+          Test
           <LoremIpsum p={5} random={false} />
         </Box>
       </Container>
