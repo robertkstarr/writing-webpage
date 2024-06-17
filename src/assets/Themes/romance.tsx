@@ -9,7 +9,7 @@ export const romanceTheme: ThemeOptions = {
       contrastText: "#ffffff",
     },
     secondary: {
-      main: "#b36063",
+      main: "#EAD9D9",
       contrastText: "#ffffff",
     },
     background: {
@@ -41,6 +41,7 @@ export const romanceTheme: ThemeOptions = {
     subtitle1: {
       fontSize: "1rem",
       fontFamily: "Homemade Apple",
+      color: "#EAD9D9",
     },
     subtitle2: {
       fontFamily: "Homemade Apple",

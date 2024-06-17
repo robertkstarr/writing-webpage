@@ -6,8 +6,8 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
+import LoremIpsum from "react-lorem-ipsum";
 import portrait from "../assets/portrait.jpg";
-import AboutText from "./AboutText";
 
 const About = () => {
   const theme = useTheme();
@@ -91,12 +91,13 @@ const About = () => {
             flexDirection: "column",
             paddingBottom: 4,
             textAlign: "left",
-            gap: 3,
+            // gap: 3,
             overflowY: "auto",
             justifyContent: "center",
           }}
         >
-          <AboutText />
+          {/* <AboutText /> */}
+          <LoremIpsum p={5} />
         </Box>
       </Container>
     </Container>

@@ -6,6 +6,7 @@ export const hackerTheme: ThemeOptions = {
     primary: {
       main: "#0f0",
     },
+    secondary: { main: "#0f0" },
     background: {
       default: "#111111",
       paper: "#212121",
@@ -36,6 +37,7 @@ export const hackerTheme: ThemeOptions = {
     subtitle1: {
       fontFamily: "Ubuntu Mono",
       color: "#0f0",
+      fontSize: "1rem",
     },
     subtitle2: {
       fontFamily: "Ubuntu Mono",

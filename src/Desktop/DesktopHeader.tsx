@@ -41,7 +41,7 @@ const DesktopHeader = (props: HeaderProps) => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon color="secondary" />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -69,7 +69,9 @@ const DesktopHeader = (props: HeaderProps) => {
                     props.setSection(page);
                   }}
                 >
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" variant="subtitle1">
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
