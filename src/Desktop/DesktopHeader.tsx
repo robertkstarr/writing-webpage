@@ -128,17 +128,17 @@ const DesktopHeader = (props: HeaderProps) => {
             anchorEl={anchorTheme}
             anchorOrigin={{
               vertical: "bottom",
-              horizontal: "left",
+              horizontal: "right",
             }}
             keepMounted
             transformOrigin={{
               vertical: "top",
-              horizontal: "left",
+              horizontal: "right",
             }}
             open={Boolean(anchorTheme)}
             onClose={handleCloseThemeMenu}
             sx={{
-              display: { xs: "block", md: "none" },
+              display: "block",
             }}
           >
             {themes.map((theme) => (
@@ -149,7 +149,7 @@ const DesktopHeader = (props: HeaderProps) => {
                   props.setTheme(theme);
                 }}
               >
-                <Typography textAlign="center" variant="subtitle1">
+                <Typography textAlign="center" variant="subtitle2">
                   {theme}
                 </Typography>
               </MenuItem>
