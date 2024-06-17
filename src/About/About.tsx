@@ -5,10 +5,11 @@ import AboutText from "./AboutText";
 const About = () => {
   return (
     <Container
-      disableGutters
+      // disableGutters
       maxWidth={false}
       sx={{
         display: "flex",
+        paddingTop: 2,
         flexDirection: "column",
         height: "100%",
         margin: 0,
@@ -28,6 +29,9 @@ const About = () => {
             flex: 1,
             backgroundColor: "inherit",
             backgroundImage: "none",
+            padding: 4,
+            border: "none",
+            boxShadow: "none",
           }}
         >
           <CardMedia
