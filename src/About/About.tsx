@@ -1,11 +1,19 @@
-import { Box, Card, CardMedia, Container, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardMedia,
+  Container,
+  Typography,
+  useTheme,
+} from "@mui/material";
 import portrait from "../assets/portrait.jpg";
 import AboutText from "./AboutText";
 
 const About = () => {
+  const theme = useTheme();
+
   return (
     <Container
-      // disableGutters
       maxWidth={false}
       sx={{
         display: "flex",
@@ -16,6 +24,17 @@ const About = () => {
         minHeight: 0,
       }}
     >
+      <Typography
+        variant="h5"
+        sx={{
+          paddingTop: 2,
+          display: "flex",
+          justifyContent: "center",
+          color: `${theme.palette.primary.main}`,
+        }}
+      >
+        About
+      </Typography>
       <Container
         sx={{
           display: "flex",
@@ -24,7 +43,7 @@ const About = () => {
       >
         <Card
           sx={{
-            display: "flex",
+            display: { xs: "none", md: "flex" },
             alignItems: "center",
             flex: 1,
             backgroundColor: "inherit",
@@ -53,12 +72,6 @@ const About = () => {
             justifyContent: "center",
           }}
         >
-          <Typography
-            variant="h5"
-            sx={{ display: "flex", justifyContent: "center" }}
-          >
-            About
-          </Typography>
           <AboutText />
         </Box>
       </Container>

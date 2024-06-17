@@ -13,7 +13,7 @@ export const romanceTheme: ThemeOptions = {
       contrastText: "#ffffff",
     },
     background: {
-      default: "#fff",
+      default: "#EAD9D9",
       paper: "#fff",
     },
   },
