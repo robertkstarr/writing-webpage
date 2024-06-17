@@ -16,10 +16,16 @@ const themeOptions: ThemeOptions = {
   },
   typography: {
     body1: {
-      fontSize: 12,
+      fontSize: 18,
     },
     subtitle1: {
       fontSize: 12,
+    },
+    subtitle2: {
+      fontSize: 18,
+    },
+    button: {
+      fontSize: 18,
     },
   },
 };

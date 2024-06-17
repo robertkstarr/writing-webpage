@@ -48,10 +48,11 @@ const themeSettings: ThemeOptions = {
     subtitle2: {
       fontFamily: "Homemade Apple",
       color: "#de4646",
-      fontSize: "1rem",
+      fontSize: 18,
     },
     button: {
       fontFamily: "Homemade Apple",
+      fontSize: 18,
       fontWeight: 900,
       textTransform: "none",
     },

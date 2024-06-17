@@ -44,12 +44,13 @@ const themeSettings: ThemeOptions = {
     subtitle2: {
       fontFamily: "Ubuntu Mono",
       color: "#0f0",
-      fontSize: "1rem",
+      fontSize: 18,
     },
     button: {
       fontFamily: "Ubuntu Mono",
       fontWeight: 900,
       color: "#0f0",
+      fontSize: 18,
     },
     overline: {
       fontFamily: "Ubuntu Mono",

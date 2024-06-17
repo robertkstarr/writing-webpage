@@ -25,6 +25,9 @@ const themeOptions: ThemeOptions = {
     subtitle1: {
       fontSize: 12,
     },
+    subtitle2: {
+      fontSize: 18,
+    },
   },
 };
 

@@ -14,7 +14,7 @@ interface HeaderProps {
 
 const SiteHeader = (props: HeaderProps) => {
   const theme = useTheme();
-  const modifiedTheme = createTheme({ ...theme, typography: { fontSize: 18 } });
+  const modifiedTheme = createTheme({ ...theme });
   return (
     <ThemeProvider theme={modifiedTheme}>
       <AppBar position="fixed">
