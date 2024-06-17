@@ -19,8 +19,6 @@ const About = () => {
         sx={{
           display: "flex",
           flexDirection: "row",
-          //   height: "100%",
-          //   minHeight: 0,
         }}
       >
         <Card

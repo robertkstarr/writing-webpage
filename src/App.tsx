@@ -3,12 +3,12 @@ import "@fontsource/ubuntu-mono/400-italic.css";
 import "@fontsource/ubuntu-mono/400.css"; // Specify weight
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import DesktopApp from "./Desktop/DesktopApp";
-import { hackerTheme } from "./assets/themes";
+import { romanceTheme } from "./assets/Themes/romance";
 
 function App() {
   const desktop = true;
 
-  const theme = createTheme(hackerTheme);
+  const theme = createTheme(romanceTheme);
 
   return (
     <ThemeProvider theme={theme}>

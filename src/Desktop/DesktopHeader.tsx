@@ -27,10 +27,10 @@ const DesktopHeader = (props: HeaderProps) => {
               <Button
                 key={page}
                 onClick={() => {
-                  console.log(page);
                   props.setSection(page);
                 }}
                 sx={{ my: 2, display: "block" }}
+                variant="contained"
               >
                 {page}
               </Button>
