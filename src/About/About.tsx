@@ -1,6 +1,6 @@
 import { Box, Card, CardMedia, Container } from "@mui/material";
 import LoremIpsum from "react-lorem-ipsum";
-import portrait from "../assets/portrait.jpg";
+import portrait from "../assets/RobertMax.jpg";
 
 const About = () => {
   return (

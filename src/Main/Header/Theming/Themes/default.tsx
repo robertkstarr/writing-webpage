@@ -15,6 +15,10 @@ const themeOptions: ThemeOptions = {
     },
   },
   typography: {
+    fontFamily: "serif",
+    h4: {
+      fontWeight: "bolder",
+    },
     body1: {
       fontSize: 18,
     },
