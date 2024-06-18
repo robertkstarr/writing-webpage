@@ -1,3 +1,4 @@
+import "@fontsource/vt323";
 import { ThemeOptions, createTheme } from "@mui/material";
 
 const themeSettings: ThemeOptions = {
@@ -18,42 +19,42 @@ const themeSettings: ThemeOptions = {
       fontSize: 18,
     },
     h1: {
-      fontFamily: "Ubuntu Mono",
+      fontFamily: "VT323",
     },
     h2: {
-      fontFamily: "Ubuntu Mono",
+      fontFamily: "VT323",
     },
     h3: {
-      fontFamily: "Ubuntu Mono",
+      fontFamily: "VT323",
     },
     h4: {
-      fontFamily: "Ubuntu Mono",
+      fontFamily: "VT323",
     },
     h6: {
-      fontFamily: "Ubuntu Mono",
+      fontFamily: "VT323",
     },
     h5: {
-      fontFamily: "Ubuntu Mono",
+      fontFamily: "VT323",
       color: "#0f0",
     },
     subtitle1: {
-      fontFamily: "Ubuntu Mono",
+      fontFamily: "VT323",
       color: "#0f0",
       fontSize: "1rem",
     },
     subtitle2: {
-      fontFamily: "Ubuntu Mono",
+      fontFamily: "VT323",
       color: "#0f0",
       fontSize: 18,
     },
     button: {
-      fontFamily: "Ubuntu Mono",
+      fontFamily: "VT323",
       fontWeight: 900,
       color: "#0f0",
       fontSize: 18,
     },
     overline: {
-      fontFamily: "Ubuntu Mono",
+      fontFamily: "VT323",
     },
   },
 };
