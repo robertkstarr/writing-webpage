@@ -1,6 +1,6 @@
 import { Box, Card, CardMedia, Container } from "@mui/material";
-import LoremIpsum from "react-lorem-ipsum";
 import portrait from "../assets/RobertMax.jpg";
+import AboutText from "./AboutText";
 
 const About = () => {
   return (
@@ -75,8 +75,8 @@ const About = () => {
             justifyContent: "center",
           }}
         >
-          {/* <AboutText /> */}
-          <LoremIpsum p={5} random={false} />
+          <AboutText />
+          {/* <LoremIpsum p={5} random={false} /> */}
         </Box>
       </Container>
     </Container>

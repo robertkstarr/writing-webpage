@@ -14,7 +14,7 @@ const themeSettings: ThemeOptions = {
     },
   },
   typography: {
-    fontFamily: "Open Sans",
+    fontFamily: "Ubuntu Mono",
     body1: {
       fontSize: 18,
     },
@@ -49,9 +49,10 @@ const themeSettings: ThemeOptions = {
     },
     button: {
       fontFamily: "VT323",
-      fontWeight: 900,
+      // fontWeight: 900,
       color: "#0f0",
-      fontSize: 18,
+      fontSize: 20,
+      textTransform: "none",
     },
     overline: {
       fontFamily: "VT323",
