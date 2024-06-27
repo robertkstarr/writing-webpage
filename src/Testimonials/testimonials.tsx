@@ -1,18 +1,30 @@
-import LoremIpsum from "react-lorem-ipsum";
+import { Box, Typography } from "@mui/material";
 
 const Testimonials = () => {
   return (
-    <>
-      <LoremIpsum p={5} random={false} />
-      {/* <Typography>
+    <Box
+      width={"80%"}
+      display={"flex"}
+      justifyContent={"center"}
+      flexDirection={"column"}
+      alignSelf={"center"}
+      marginTop={"2rem"}
+    >
+      <Typography display={"flex"}>
         "Robert has been great to work with! He's able to take a simple concept
         and return a creative, well-written result. Robert has also been
         incredibly punctual with the delivery of his work. We've been very happy
-        with Robert and will continue to go to him with future projects."{" "}
-        <div>- Mike Martins</div>
-        <div> "Final Girl" Designer</div> */}
-      {/* </Typography> */}
-    </>
+        with Robert and will continue to go to him with future projects."
+      </Typography>
+      <Box display={"flex"} flexDirection={"column"}>
+        <Typography display={"flex"} justifyContent={"flex-end"}>
+          - Mike Martins
+        </Typography>
+        <Typography display={"flex"} justifyContent={"flex-end"}>
+          Designer "Final Girl"
+        </Typography>
+      </Box>
+    </Box>
   );
 };
 export default Testimonials;
