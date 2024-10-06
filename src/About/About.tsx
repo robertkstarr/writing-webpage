@@ -1,5 +1,5 @@
 import { Box, Card, CardMedia, Container } from "@mui/material";
-import portrait from "../assets/RobertMax.jpg";
+import portrait from "../assets/cartoon.jpeg";
 import AboutText from "./AboutText";
 
 const About = () => {
