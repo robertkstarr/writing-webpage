@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import LoremIpsum from "react-lorem-ipsum";
 import About from "../About/About";
 import PageTemplate from "../PageTemplate";
+import Services from "../Services/Services";
 import Testimonials from "../Testimonials/testimonials";
 
 const Content = (props: { section: string }) => {
@@ -10,11 +11,7 @@ const Content = (props: { section: string }) => {
       case "About":
         return <About />;
       case "Services":
-        return (
-          <>
-            <LoremIpsum p={5} random={false} />
-          </>
-        );
+        return <Services />;
       case "Testimonials":
         return <Testimonials />;
       case "Portfolio":
