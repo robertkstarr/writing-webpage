@@ -14,7 +14,6 @@ import SiteFooter from "./Main/SiteFooter";
 
 function App() {
   const [theme, setTheme] = useState("romance");
-  const [section, setSection] = useState("About");
   const [currentTheme, setCurrentTheme] = useState(DefaultTheme);
 
   useEffect(() => {
@@ -30,7 +29,7 @@ function App() {
         themeMenu={<ThemeMenu setTheme={setTheme} />}
       />
 
-      <Content section={section} />
+      <Content />
       <SiteFooter />
     </ThemeProvider>
   );
