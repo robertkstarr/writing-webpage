@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Card, CardContent } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 const Quote = (props: {
@@ -7,18 +7,35 @@ const Quote = (props: {
   company?: string;
 }) => {
   return (
-    <Box display={"flex"} gap={0} flexDirection={"column"}>
-      <Typography display={"flex"}>{props.testimonial}</Typography>
-      <Box display={"flex"} flexDirection={"column"}>
-        <Typography display={"flex"} justifyContent={"flex-end"}>
-          - {props.source}
-        </Typography>
-        {props.company && (
-          <Typography display={"flex"} justifyContent={"flex-end"}>
-            {props.company}
-          </Typography>
-        )}
-      </Box>
+    <Box
+      height={"100%"}
+      flexDirection={"column"}
+      alignContent={"center"}
+      justifyItems={"center"}
+    >
+      <Card variant="outlined">
+        <CardContent>
+          <Typography display={"flex"}>{props.testimonial}</Typography>
+          <Box display={"flex"} flexDirection={"column"}>
+            <Typography
+              display={"flex"}
+              justifyContent={"flex-end"}
+              fontStyle={"italic"}
+            >
+              - {props.source}
+            </Typography>
+            {props.company && (
+              <Typography
+                display={"flex"}
+                justifyContent={"flex-end"}
+                fontWeight={"bold"}
+              >
+                {props.company}
+              </Typography>
+            )}
+          </Box>
+        </CardContent>
+      </Card>
     </Box>
   );
 };

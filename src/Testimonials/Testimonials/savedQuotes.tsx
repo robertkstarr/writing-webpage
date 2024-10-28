@@ -1,4 +1,3 @@
-import React from "react";
 import Quote from "../quote";
 
 const MikeMartins = () => {
@@ -41,14 +40,5 @@ const Upwork2 = () => {
 
   return <Quote testimonial={testimonial} source={source} company={company} />;
 };
-const SavedQuotes = () => {
-  return (
-    <React.Fragment>
-      <MikeMartins />
-      <Eliana />
-      <Upwork1 />
-      <Upwork2 />
-    </React.Fragment>
-  );
-};
+const SavedQuotes = [<MikeMartins />, <Eliana />, <Upwork1 />, <Upwork2 />];
 export default SavedQuotes;

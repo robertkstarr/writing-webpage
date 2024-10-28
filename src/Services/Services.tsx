@@ -1,9 +1,10 @@
+import LoremIpsum from "react-lorem-ipsum";
 import PageTemplate from "../PageTemplate";
 
 const Services = () => {
   return (
     <PageTemplate pageTitle="Services">
-      <div>Services</div>
+      <LoremIpsum p={20} />
     </PageTemplate>
   );
 };
