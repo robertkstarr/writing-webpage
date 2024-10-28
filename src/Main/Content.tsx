@@ -1,39 +1,31 @@
 import Box from "@mui/material/Box";
-import LoremIpsum from "react-lorem-ipsum";
 import About from "../About/About";
-import PageTemplate from "../PageTemplate";
+import Contact from "../Contact/Contact";
+import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
 import Testimonials from "../Testimonials/testimonials";
 
 const Content = (props: { section: string }) => {
   const getBody = () => {
-    switch (props.section) {
-      case "About":
-        return <About />;
-      case "Services":
-        return <Services />;
-      case "Testimonials":
-        return <Testimonials />;
-      case "Portfolio":
-        return (
-          <>
-            <LoremIpsum p={5} random={false} />
-          </>
-        );
-      case "Contact":
-        return (
-          <>
-            <LoremIpsum p={5} random={false} />
-          </>
-        );
-      default:
-        return <>Invalid Selection</>;
-    }
+    return (
+      <>
+        <About />
+        <Services />
+        <Testimonials />
+        <Portfolio />
+        <Contact />
+      </>
+    );
   };
 
   return (
-    <Box width="100%" justifyContent={"center"} display={"flex"}>
-      <PageTemplate pageTitle={props.section}>{getBody()}</PageTemplate>
+    <Box
+      width="100%"
+      justifyContent={"center"}
+      display={"flex"}
+      flexDirection={"column"}
+    >
+      {getBody()}
     </Box>
   );
 };

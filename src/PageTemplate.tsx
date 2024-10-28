@@ -7,7 +7,12 @@ const PageTemplate = (props: { pageTitle: string; children: JSX.Element }) => {
     <Box
       alignSelf={"center"}
       maxWidth={"1200px"}
-      sx={{ display: "flex", flexDirection: "column", alignSelf: "center" }}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignSelf: "center",
+      }}
+      id={props.pageTitle}
     >
       <Typography
         variant="h4"

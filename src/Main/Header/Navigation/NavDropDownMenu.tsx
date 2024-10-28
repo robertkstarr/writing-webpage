@@ -1,6 +1,8 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box, IconButton, Menu, MenuItem, Typography } from "@mui/material";
 import { useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import "./NavDropDownMenu.css";
 import { NavigationOptions } from "./NavigationOptions";
 
 interface NavDropDownProps {
@@ -51,11 +53,12 @@ const NavDropDownMenu = (props: NavDropDownProps) => {
             key={page}
             onClick={() => {
               handleCloseNavMenu();
-              props.setSection(page);
             }}
           >
             <Typography textAlign="center" variant="subtitle2">
-              {page}
+              <AnchorLink offset={48} href={"#" + page}>
+                {page}
+              </AnchorLink>
             </Typography>
           </MenuItem>
         ))}
