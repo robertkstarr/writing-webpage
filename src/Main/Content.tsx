@@ -5,7 +5,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
 import Testimonials from "../Testimonials/testimonials";
 
-const Content = (props: { section: string }) => {
+const Content = () => {
   const getBody = () => {
     return (
       <>

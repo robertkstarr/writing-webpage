@@ -21,16 +21,12 @@ function App() {
     setCurrentTheme(chooseTheme(theme));
   }, [theme]);
 
-  useEffect(() => {
-    setSection(section);
-  }, [section]);
-
   return (
     <ThemeProvider theme={currentTheme}>
       <CssBaseline />
       <SiteHeader
-        navDropDownMenu={<NavDropDownMenu setSection={setSection} />}
-        navAppBarMenu={<NavAppBarMenu setSection={setSection} />}
+        navDropDownMenu={<NavDropDownMenu />}
+        navAppBarMenu={<NavAppBarMenu />}
         themeMenu={<ThemeMenu setTheme={setTheme} />}
       />
 

@@ -5,11 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./NavDropDownMenu.css";
 import { NavigationOptions } from "./NavigationOptions";
 
-interface NavDropDownProps {
-  setSection: (input: string) => void;
-}
-
-const NavDropDownMenu = (props: NavDropDownProps) => {
+const NavDropDownMenu = () => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
