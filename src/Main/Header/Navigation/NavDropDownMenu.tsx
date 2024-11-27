@@ -52,7 +52,7 @@ const NavDropDownMenu = () => {
             }}
           >
             <Typography textAlign="center" variant="subtitle2">
-              <AnchorLink offset={48} href={"#" + page}>
+              <AnchorLink offset={64} href={"#" + page}>
                 {page}
               </AnchorLink>
             </Typography>

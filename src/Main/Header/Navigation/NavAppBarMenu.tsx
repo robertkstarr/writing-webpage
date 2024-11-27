@@ -21,7 +21,7 @@ const NavAppBarMenu = () => {
           href={"#" + page}
           sx={{ my: 2, display: "block" }}
           variant="contained"
-          offset={48}
+          offset={64}
         >
           {page}
         </Button>

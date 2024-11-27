@@ -9,7 +9,7 @@ import {
 interface HeaderProps {
   navDropDownMenu: React.ReactElement;
   navAppBarMenu: React.ReactElement;
-  themeMenu: React.ReactElement;
+  themeMenu?: React.ReactElement;
 }
 
 const SiteHeader = (props: HeaderProps) => {
