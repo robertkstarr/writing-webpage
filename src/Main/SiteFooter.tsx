@@ -1,6 +1,6 @@
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 
-const SiteFooter = () => {
+const SiteFooter = (props: { author: string }) => {
   const year = new Date().getFullYear();
   return (
     <>
@@ -26,7 +26,7 @@ const SiteFooter = () => {
             }}
           >
             <Box sx={{ display: "flex", textAlign: "center" }}>
-              © Copyright {year} by Robert K. Starr
+              © Copyright {year} by {props.author}
             </Box>
             <Box sx={{ display: "flex", textAlign: "center" }}>
               All Rights Reserved

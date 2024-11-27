@@ -1,12 +1,8 @@
-import LoremIpsum from "react-lorem-ipsum";
+import React from "react";
 import PageTemplate from "../PageTemplate";
 
-const Services = () => {
-  return (
-    <PageTemplate pageTitle="Services">
-      <LoremIpsum p={20} />
-    </PageTemplate>
-  );
+const Services = (props: { pageContent: React.ReactElement }) => {
+  return <PageTemplate pageTitle="Services">{props.pageContent}</PageTemplate>;
 };
 
 export default Services;
