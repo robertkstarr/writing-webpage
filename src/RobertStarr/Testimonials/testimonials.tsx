@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import PageTemplate from "../PageTemplate";
+import PageTemplate from "../../PageTemplate";
 import SavedQuotes from "./Testimonials/savedQuotes";
 
 const Testimonials = () => {

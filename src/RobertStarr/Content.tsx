@@ -5,8 +5,8 @@ import portrait from "../assets/cartoon-shaded.jpg";
 import Contact from "../Contact/Contact";
 import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
-import Testimonials from "../Testimonials/testimonials";
 import AboutText from "./AboutText";
+import Testimonials from "./Testimonials/testimonials";
 
 const Content = () => {
   const getBody = () => {
