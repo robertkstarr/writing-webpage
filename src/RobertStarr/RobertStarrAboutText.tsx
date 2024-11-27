@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-const AboutText = () => {
+const RobertStarrAboutText = () => {
   return (
     <Box display={"flex"} gap={3} flexDirection={"column"}>
       <div>
@@ -37,4 +37,4 @@ const AboutText = () => {
   );
 };
 
-export default AboutText;
+export default RobertStarrAboutText;

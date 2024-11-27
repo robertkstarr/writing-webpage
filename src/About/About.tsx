@@ -1,9 +1,7 @@
 import { Box, Card, CardMedia, Container } from "@mui/material";
-import portrait from "../assets/cartoon-shaded.jpg";
 import PageTemplate from "../PageTemplate";
-import AboutText from "./AboutText";
 
-const About = () => {
+const About = (props: { AboutText: React.ReactElement; image: string }) => {
   return (
     <PageTemplate pageTitle={"About"}>
       <Container
@@ -38,7 +36,7 @@ const About = () => {
               objectFit: "contain",
               width: "60%",
             }}
-            image={portrait}
+            image={props.image}
           />
         </Card>
         <Container
@@ -63,7 +61,7 @@ const About = () => {
               component="img"
               height="100%"
               sx={{ display: "flex", objectFit: "contain" }}
-              image={portrait}
+              image={props.image}
             />
           </Card>
           <Box
@@ -77,7 +75,7 @@ const About = () => {
               justifyContent: "center",
             }}
           >
-            <AboutText />
+            {props.AboutText}
             {/* <LoremIpsum p={5} random={false} /> */}
           </Box>
         </Container>
