@@ -28,4 +28,6 @@ export default {
       <SiteFooter />
     </>
   ),
+
+  title: "Robert Starr — Writer for Hire"
 };

@@ -21,6 +21,7 @@ const NavAppBarMenu = (props: { navigationOptions: string[] }) => {
           sx={{ my: 2, display: "block" }}
           variant="contained"
           offset={64}
+          key={page}
         >
           {page}
         </Button>
