@@ -3,9 +3,8 @@ import { Box, IconButton, Menu, MenuItem, Typography } from "@mui/material";
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./NavDropDownMenu.css";
-import { NavigationOptions } from "./NavigationOptions";
 
-const NavDropDownMenu = () => {
+const NavDropDownMenu = (props: { navigationOptions: string[] }) => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -44,7 +43,7 @@ const NavDropDownMenu = () => {
           display: { xs: "block", md: "none" },
         }}
       >
-        {NavigationOptions.map((page) => (
+        {props.navigationOptions.map((page) => (
           <MenuItem
             key={page}
             onClick={() => {

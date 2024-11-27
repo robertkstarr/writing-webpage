@@ -15,7 +15,7 @@ const Testimonials = () => {
         marginTop={"2rem"}
         gap={"2rem"}
       >
-        <Carousel height={600} interval={6000}>
+        <Carousel height={"20rem"} interval={6000}>
           {SavedQuotes.map((item) => item)}
         </Carousel>
       </Box>

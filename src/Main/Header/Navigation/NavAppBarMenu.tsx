@@ -1,8 +1,7 @@
 import { Box, Button } from "@mui/material";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { NavigationOptions } from "./NavigationOptions";
 
-const NavAppBarMenu = () => {
+const NavAppBarMenu = (props: { navigationOptions: string[] }) => {
   return (
     <Box
       sx={{
@@ -15,7 +14,7 @@ const NavAppBarMenu = () => {
         },
       }}
     >
-      {NavigationOptions.map((page) => (
+      {props.navigationOptions.map((page) => (
         <Button
           component={AnchorLink}
           href={"#" + page}

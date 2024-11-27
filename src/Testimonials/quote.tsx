@@ -1,4 +1,4 @@
-import { Box, Card, CardContent } from "@mui/material";
+import { Box, Card, CardContent, useTheme } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 const Quote = (props: {
@@ -6,6 +6,7 @@ const Quote = (props: {
   source: string;
   company?: string;
 }) => {
+  const theme = useTheme();
   return (
     <Box
       height={"100%"}
@@ -13,7 +14,13 @@ const Quote = (props: {
       alignContent={"center"}
       justifyItems={"center"}
     >
-      <Card variant="outlined">
+      <Card
+        variant="outlined"
+        sx={{
+          borderRadius: 5,
+          backgroundColor: theme.palette.background.paper,
+        }}
+      >
         <CardContent>
           <Typography display={"flex"}>{props.testimonial}</Typography>
           <Box display={"flex"} flexDirection={"column"}>
