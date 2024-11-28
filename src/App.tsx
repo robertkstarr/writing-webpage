@@ -24,7 +24,7 @@ const RoutedApp = (props: SiteProps) => {
 const getProps = () => {
   const url = window.location.href;
 
-  if (url.includes("robertkstarr")) {
+  if (url.includes("robertkstarr.com")) {
     return RobertStarrProps;
   } else {
     return MarcAaronsProps;
