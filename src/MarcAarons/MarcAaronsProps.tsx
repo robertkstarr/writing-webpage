@@ -1,14 +1,14 @@
 import Box from "@mui/material/Box";
 import LoremIpsum from "react-lorem-ipsum";
-import About from "../../About/About";
-import portrait from "../../assets/dragon.jpg";
-import Contact from "../../Contact/Contact";
-import Services from "../../Services/Services";
-import NavAppBarMenu from "../Header/Navigation/NavAppBarMenu";
-import NavDropDownMenu from "../Header/Navigation/NavDropDownMenu";
-import SiteHeader from "../Header/SiteHeader";
-import HackerTheme from "../Header/Theming/Themes/hacker";
-import SiteFooter from "../SiteFooter";
+import About from "../About/About";
+import portrait from "../assets/dragon.jpg";
+import Contact from "../Contact/Contact";
+import NavAppBarMenu from "../Main/Header/Navigation/NavAppBarMenu";
+import NavDropDownMenu from "../Main/Header/Navigation/NavDropDownMenu";
+import SiteHeader from "../Main/Header/SiteHeader";
+import HackerTheme from "../Main/Header/Theming/Themes/hacker";
+import SiteFooter from "../Main/SiteFooter";
+import Services from "../Services/Services";
 
 const NavigationOptions = ["About", "Services", "Contact"];
 

@@ -3,7 +3,8 @@ import "@fontsource/ubuntu-mono/400-italic.css";
 import "@fontsource/ubuntu-mono/400.css"; // Specify weight
 import { CssBaseline, Theme, ThemeProvider } from "@mui/material";
 import { ReactElement, useEffect } from "react";
-import MarcAaronsProps from "./Main/MarcAarons/MarcAaronsProps";
+import MarcAaronsProps from "./MarcAarons/MarcAaronsProps";
+import RenaeRobertsProps from "./RenaeRoberts/RenaeRobertsProps";
 import RobertStarrProps from "./RobertStarr/RobertStarrProps";
 
 interface SiteProps {
@@ -26,8 +27,12 @@ const getProps = () => {
 
   if (url.includes("robertkstarr.com")) {
     return RobertStarrProps;
-  } else {
+  } else if (url.includes("mark-aarons")) {
     return MarcAaronsProps;
+  } else if (url.includes("renae-roberts")) {
+    return RenaeRobertsProps;
+  } else {
+    return RenaeRobertsProps;
   }
 };
 
