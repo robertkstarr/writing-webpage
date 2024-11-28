@@ -27,7 +27,7 @@ const getProps = () => {
 
   if (url.includes("robertkstarr.com")) {
     return RobertStarrProps;
-  } else if (url.includes("mark-aarons")) {
+  } else if (url.includes("marc-aarons")) {
     return MarcAaronsProps;
   } else if (url.includes("renae-roberts")) {
     return RenaeRobertsProps;
