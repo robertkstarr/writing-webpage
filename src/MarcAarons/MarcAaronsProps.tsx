@@ -6,14 +6,14 @@ import Contact from "../Contact/Contact";
 import NavAppBarMenu from "../Main/Header/Navigation/NavAppBarMenu";
 import NavDropDownMenu from "../Main/Header/Navigation/NavDropDownMenu";
 import SiteHeader from "../Main/Header/SiteHeader";
-import HackerTheme from "../Main/Header/Theming/Themes/hacker";
+import DefaultTheme from "../Main/Header/Theming/Themes/default";
 import SiteFooter from "../Main/SiteFooter";
 import Services from "../Services/Services";
 
 const NavigationOptions = ["About", "Services", "Contact"];
 
 export default {
-  theme: HackerTheme,
+  theme: DefaultTheme,
 
   content: (
     <Box
