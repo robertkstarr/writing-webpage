@@ -32,7 +32,7 @@ const getProps = () => {
   } else if (url.includes("renae") && url.includes("roberts")) {
     return RenaeRobertsProps;
   } else {
-    return RenaeRobertsProps;
+    return MarcAaronsProps;
   }
 };
 

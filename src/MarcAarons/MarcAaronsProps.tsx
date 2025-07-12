@@ -28,7 +28,17 @@ export default {
         }
         navAppBarMenu={<NavAppBarMenu navigationOptions={NavigationOptions} />}
       />
-      <About AboutText={<LoremIpsum p={4} />} image={portrait} />
+      <About
+        AboutText={
+          <>
+            <div>
+              Marc Aarons grew up in Central Texas where he always dreamed of
+              becoming a firefighter.
+            </div>
+          </>
+        }
+        image={portrait}
+      />
       <Services pageContent={<LoremIpsum p={3} />} />
       <Contact />
       <SiteFooter author={"Marc Aarons"} />

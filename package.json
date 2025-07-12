@@ -29,7 +29,8 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.3.1",
     "react-lorem-ipsum": "^1.4.10",
-    "react-material-ui-carousel": "^3.4.2"
+    "react-material-ui-carousel": "^3.4.2",
+    "react-obfuscate": "^3.7.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",
