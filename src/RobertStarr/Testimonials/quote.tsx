@@ -22,12 +22,15 @@ const Quote = (props: {
         }}
       >
         <CardContent>
-          <Typography display={"flex"}>{props.testimonial}</Typography>
+          <Typography variant={"subtitle1"} display={"flex"}>
+            {props.testimonial}
+          </Typography>
           <Box display={"flex"} flexDirection={"column"}>
             <Typography
               display={"flex"}
               justifyContent={"flex-end"}
               fontStyle={"italic"}
+              variant={"subtitle1"}
             >
               - {props.source}
             </Typography>
@@ -36,6 +39,7 @@ const Quote = (props: {
                 display={"flex"}
                 justifyContent={"flex-end"}
                 fontWeight={"bold"}
+                variant={"subtitle1"}
               >
                 {props.company}
               </Typography>

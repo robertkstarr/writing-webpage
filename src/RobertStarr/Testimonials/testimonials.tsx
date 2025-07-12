@@ -16,7 +16,13 @@ const Testimonials = () => {
         marginTop={"2rem"}
         gap={"2rem"}
       >
-        <Carousel height={"20rem"} interval={6000}>
+        <Carousel
+          sx={{
+            height: { xs: "30rem", md: "18rem" },
+            alignContent: "space-around",
+          }}
+          interval={6000}
+        >
           {SavedQuotes.map((item, index) => (
             <React.Fragment key={index}>{item}</React.Fragment>
           ))}
