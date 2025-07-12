@@ -11,10 +11,10 @@ const Contact = (props: ContactProps) => {
   const Email = () => {
     return (
       <Box display="flex" flexDirection="row" justifyContent="space-between">
-        <Typography variant="h5" padding=".25rem">
+        <Typography variant="subtitle1" padding=".125rem">
           Email:
         </Typography>
-        <Typography variant="h6" padding=".25rem">
+        <Typography variant="subtitle1" padding=".125rem">
           <Obfuscate email={props.email} />
         </Typography>
       </Box>
@@ -23,10 +23,10 @@ const Contact = (props: ContactProps) => {
   const PhoneNumber = () => {
     return (
       <Box display="flex" flexDirection="row">
-        <Typography variant="h5" padding=".25rem">
+        <Typography variant="subtitle1" padding=".125rem">
           Phone:
         </Typography>
-        <Typography variant="h6" padding=".25rem">
+        <Typography variant="subtitle1" padding=".125rem">
           <Obfuscate tel={props.phoneNumber} />
         </Typography>
       </Box>
