@@ -14,13 +14,17 @@ const themeSettings: ThemeOptions = {
     },
     background: {
       default: "#EAD9D9",
-      paper: "#fff",
+      paper: "#e59797ff",
     },
   },
   typography: {
     fontFamily: "Open Sans",
     body1: {
       fontSize: 18,
+    },
+    body2: {
+      fontSize: "1rem",
+      color: "#000000ff",
     },
     h1: {
       fontFamily: "Homemade Apple",
@@ -43,7 +47,7 @@ const themeSettings: ThemeOptions = {
     subtitle1: {
       fontSize: "1rem",
       fontFamily: "Homemade Apple",
-      color: "#EAD9D9",
+      color: "#de4646",
     },
     subtitle2: {
       fontFamily: "Homemade Apple",

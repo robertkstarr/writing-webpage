@@ -1,12 +1,22 @@
-import LoremIpsum from "react-lorem-ipsum";
 import PageTemplate from "../PageTemplate";
+import { PortfolioEntry, PortfolioEntryProps } from "./PortfolioEntry";
 
-const Portfolio = () => {
+interface PortfolioProps {
+  entries: PortfolioEntryProps[];
+}
+
+const Portfolio = (props: PortfolioProps) => {
   return (
     <PageTemplate pageTitle="Portfolio">
-      <div>
-        <LoremIpsum p={30} />
-      </div>
+      <>
+        {props.entries.map((element) => {
+          return (
+            <div>
+              <PortfolioEntry {...element} />
+            </div>
+          );
+        })}
+      </>
     </PageTemplate>
   );
 };

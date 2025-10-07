@@ -76,7 +76,6 @@ const About = (props: { AboutText: React.ReactElement; image: string }) => {
             }}
           >
             {props.AboutText}
-            {/* <LoremIpsum p={5} random={false} /> */}
           </Box>
         </Container>
       </Container>

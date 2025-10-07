@@ -23,10 +23,18 @@ const Contact = (props: ContactProps) => {
   const PhoneNumber = () => {
     return (
       <Box display="flex" flexDirection="row">
-        <Typography variant="subtitle1" padding=".125rem">
+        <Typography
+          variant="subtitle1"
+          padding=".125rem"
+          sx={{ paddingBottom: { xs: "1rem", md: ".125rem" } }}
+        >
           Phone:
         </Typography>
-        <Typography variant="subtitle1" padding=".125rem">
+        <Typography
+          variant="subtitle1"
+          padding=".125rem"
+          paddingBottom={"1rem"}
+        >
           <Obfuscate tel={props.phoneNumber} />
         </Typography>
       </Box>

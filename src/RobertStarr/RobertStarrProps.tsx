@@ -1,14 +1,14 @@
 import NavAppBarMenu from "../Main/Header/Navigation/NavAppBarMenu";
 import NavDropDownMenu from "../Main/Header/Navigation/NavDropDownMenu";
 import SiteHeader from "../Main/Header/SiteHeader";
-import ScreenwriterTheme from "../Main/Header/Theming/Themes/screenwriter";
+import RomanceTheme from "../Main/Header/Theming/Themes/romance";
 import SiteFooter from "../Main/SiteFooter";
 import Content from "./Content";
 
-const NavigationOptions = ["About", "Testimonials", "Contact"];
+const NavigationOptions = ["About", "Portfolio", "Testimonials", "Contact"];
 
 export default {
-  theme: ScreenwriterTheme,
+  theme: RomanceTheme,
 
   content: (
     <>
